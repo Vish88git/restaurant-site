@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve a Table</title>
+  </head>
+  <body>
+    <header>
+      <h1>Reserve a Table</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserve.html">Reservations</a>
+      </nav>
+    </header>
+    <main>
+      <form action="/reserve" method="post">
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </p>
+        <p>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </p>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <p>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+        </p>
+        <p>
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+          />
+        </p>
+
+        <fieldset>
+          <legend>Seating Type</legend>
+          <input
+            type="radio"
+            id="indoor"
+            name="seating"
+            value="indoor"
+            required
+          />
+          <label for="indoor">Indoor</label>
+          <input
+            type="radio"
+            id="outdoor"
+            name="seating"
+            value="outdoor"
+            required
+          />
+          <label for="outdoor">Outdoor</label>
+        </fieldset>
+
+        <button type="submit">Reserve</button>
+      </form>
+    </main>
+  </body>
+</html>
