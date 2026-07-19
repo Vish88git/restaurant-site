@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu | Spice Route</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -15,75 +16,64 @@
       </nav>
     </header>
     <main>
-      <h2>Our Menu</h2>
-      <table>
-        <caption>
-          Main Courses
-        </caption>
-        <thead>
-          <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Dum aloo</td>
-            <td>Creamy tomato gravy, tandoor aloo</td>
-            <td>₹240</td>
-          </tr>
-          <tr>
-            <td>Palak Paneer</td>
-            <td>Cottage cheese in spinach gravy</td>
-            <td>₹320</td>
-          </tr>
-          <tr>
-            <td>Butter Naan</td>
-            <td>Tandoor bread with butter</td>
-            <td>₹120</td>
-          </tr>
-          <tr>
-            <td>Veg Pulao</td>
-            <td>Rice with vegetables</td>
-            <td>₹240</td>
-          </tr>
-          <tr>
-            <td>Aloo paratha</td>
-            <td>Stuffed potato paratha</td>
-            <td>₹140</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <caption>
-          Desserts
-        </caption>
-        <thead>
-          <tr>
-            <th>Dish</th>
-            <th>Description</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Gulab Jamun</td>
-            <td>Soft, syrupy dessert</td>
-            <td>₹100</td>
-          </tr>
-          <tr>
-            <td>Paneer Pista</td>
-            <td>Cottage cheese with pistachios</td>
-            <td>₹140</td>
-          </tr>
-          <tr>
-            <td>Ice cream scoop</td>
-            <td>Vanilla/Chocolate/butterscotch ice cream scoop</td>
-            <td>₹80</td>
-          </tr>
-        </tbody>
-      </table>
+      <section>
+        <h2>Main Courses</h2>
+        <div class="menu-grid">
+          <article class="dish">
+            <h3>Dum Aloo</h3>
+            <p>Creamy tomato gravy, tandoor aloo</p>
+            <p class="price">₹240</p>
+          </article>
+
+          <article class="dish">
+            <h3>Palak Paneer</h3>
+            <p>Cottage cheese in spinach gravy</p>
+            <p class="price">₹320</p>
+          </article>
+
+          <article class="dish">
+            <h3>Veg Pulao</h3>
+            <p>Rice with vegetables</p>
+            <p class="price">₹240</p>
+          </article>
+
+          <article class="dish">
+            <h3>Butter Naan</h3>
+            <p>Tandoor bread with butter</p>
+            <p class="price">₹120</p>
+          </article>
+
+          <article class="dish">
+            <h3>Aloo paratha</h3>
+            <p>Stuffed potato paratha</p>
+            <p class="price">₹140</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Desserts</h2>
+
+        <div class="menu-grid">
+          <article class="dish">
+            <h3>Gulab Jamun</h3>
+            <p>Soft, syrupy dessert</p>
+            <p class="price">₹100</p>
+          </article>
+
+          <article class="dish">
+            <h3>Paneer Pista</h3>
+            <p>Cottage cheese with pistachios</p>
+            <p class="price">₹140</p>
+          </article>
+
+          <article class="dish">
+            <h3>Ice Cream Scoop</h3>
+            <p>Vanilla/Chocolate/Butterscotch ice cream scoop</p>
+            <p class="price">₹80</p>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>
